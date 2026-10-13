@@ -1,0 +1,54 @@
+# BYTE Cybersecurity Recruitment Tasks
+
+## Task 01: Cryptography
+- **Description:** Solved a simple Base64 cipher challenge.
+- **Ciphertext:** `QkFJTntiQTczX1E4Ul9BcmhIQ19YNHlHY0R9`
+- **Tool Used:** CyberChef 
+- **Final Flag:** `BAIN{bA73_Q8R_ArhHC_X4yGcD}`
+
+
+
+## Task 02: Steganography
+2. Task 2 — PNG Steganography
+
+Status: Attempted; flag not recovered
+
+Work completed
+
+Downloaded and examined the provided challenge.png file.
+
+Used an online PNG analysis and repair tool to investigate the image.
+
+Identified structural issues with the PNG, including CRC errors and truncation.
+
+Attempted to repair the image to make its contents visible.
+
+The repair produced a partially visible image, but the image remained corrupted.
+
+Current result
+
+I was unable to recover the complete image or extract the flag. The task remains incomplete, and further investigation would be needed.
+
+
+3. Task 3 — Binary Exploitation
+
+Status: Attempted; flag not recovered
+
+Work completed
+
+Downloaded and extracted the provided chall binary.
+
+Identified that the file is a 32-bit Linux executable, which cannot be run directly as a native macOS application.
+
+Examined the binary using command-line tools and inspected its strings and disassembly.
+
+Identified functions named main, vuln, and win.
+
+Found evidence that the vulnerable function reads user input into a buffer without an apparent input-length restriction relative to the buffer size.
+
+Identified the remote challenge endpoint: cybersub.bytesoc.dev:9999.
+
+Successfully connected to the remote service and received its welcome message and input prompt.
+
+Prepared and tested a possible buffer-overflow payload intended to redirect execution to the win function.
+
